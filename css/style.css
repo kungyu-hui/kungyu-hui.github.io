@@ -71,7 +71,7 @@ figure {
   width: 100%;
   overflow: hidden;
   position: relative; }
-@media (min-width: 991px) {
+@media (min-width: 768px) {
   #colorlib-aside {
     padding-top: 3em;
     padding-bottom: 40px;
@@ -834,6 +834,7 @@ body.offcanvas {
   float: left;
   margin-bottom: 40px;
   position: relative; }
+@media(min-width: 547px) {
   .colorlib-feature .colorlib-icon {
     position: absolute;
     top: 0;
@@ -847,18 +848,51 @@ body.offcanvas {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px; }
+}
+@media(max-width: 547px) {
+  .colorlib-feature .colorlib-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    display: table;
+    text-align: center;
+    background: #f2f3f7;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
+}
+@media(min-width: 547px) {
     .colorlib-feature .colorlib-icon i {
       display: table-cell;
       vertical-align: middle;
       color: #2c98f0;
       font-size: 60px;
       height: 100px; }
+}
+@media(max-width: 547px) {
+    .colorlib-feature .colorlib-icon i {
+      display: table-cell;
+      vertical-align: middle;
+      color: #2c98f0;
+      font-size: 60px;
+      height: 60px; }
+}
       @media screen and (max-width: 1200px) {
         .colorlib-feature .colorlib-icon i {
           font-size: 40px; } }
+@media(min-width: 547px) {
   .colorlib-feature .colorlib-text {
     padding-left: 120px;
     width: 100%; }
+}
+@media(max-width: 547px) {
+  .colorlib-feature .colorlib-text {
+    padding-left: 80px;
+    width: 100%; }
+}
     .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
       margin: 0;
       padding: 0; }
@@ -869,8 +903,14 @@ body.offcanvas {
       font-size: 14px;
       letter-spacing: 3px;
       text-transform: uppercase; }
+@media(min-width: 547px) {
   .colorlib-feature.colorlib-feature-sm .colorlib-text {
     margin-top: 30px; }
+}
+@media(max-width: 547px) {
+  .colorlib-feature.colorlib-feature-sm .colorlib-text {
+    margin-top: 17px; }
+}
   .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
     color: #3d5a5b;
     font-size: 40px; }
